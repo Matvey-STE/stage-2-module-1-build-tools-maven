@@ -3,10 +3,10 @@ package com.epam.utils;
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
         try {
-            int number = Integer.parseInt(str);
-            return number > 0;
+            double num = Double.parseDouble(str);
+            return num > 0;
         } catch (NumberFormatException e) {
-            return false;
+            return false; // Not a valid number
         }
     }
 }
